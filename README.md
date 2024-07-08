@@ -4,9 +4,10 @@ This repository contains instructions and helper scripts for flashing a Jetson O
 
 # Installing the OS from binaries
 A single setup script is provided for your convenience. It will download the prebuilt Jetpack 6 release (36.3.0) and apply
-the [precompiled ARK device tree binaries](https://github.com/ARK-Electronics/ark_jetson_compiled_device_tree_files). The script will also configure the default user, password, and hostname as "jetson".
+the [precompiled ARK device tree binaries](https://github.com/ARK-Electronics/ark_jetson_compiled_device_tree_files). The script will also configure the default user, password, and hostname as "jetson". Reload bashrc to apply changes to environment variables.
 ```
 ./setup_prebuilt.sh
+source ~/.bashrc
 ```
 Alternatively you can visit NVIDIA's [official documentation](https://docs.nvidia.com/jetson/archives/r36.3/DeveloperGuide/IN/QuickStart.html#to-flash-the-jetson-developer-kit-operating-software) for flashing the release.
 
